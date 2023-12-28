@@ -359,7 +359,7 @@ export async function exportAppImpl(
     )
   }
 
-  await fs.rm(outDir, { recursive: true, force: true })
+  // await fs.rm(outDir, { recursive: true, force: true })
   await fs.mkdir(join(outDir, '_next', buildId), { recursive: true })
 
   await fs.writeFile(
